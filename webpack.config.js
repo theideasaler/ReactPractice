@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.min.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
     },
     module: {
         rules: [
@@ -30,8 +30,9 @@ module.exports = {
         hot: true,
         publicPath: '/dist/',
         contentBase: [
-            path.join(__dirname, 'views')
+            path.join(__dirname, 'views'),
+            
         ],
-        watchContentBase: true
+        watchContentBase: true,
     }
 };
