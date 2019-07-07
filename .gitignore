@@ -2,4 +2,3 @@
 /node_modules/
 
 #dist folder
-/dist/bundle.min.js
