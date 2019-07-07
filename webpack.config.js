@@ -28,6 +28,10 @@ module.exports = {
         port: 9090,
         open: true,
         hot: true,
-        publicPath: '/dist/'
+        publicPath: '/dist/',
+        contentBase: [
+            path.join(__dirname, 'views')
+        ],
+        watchContentBase: true
     }
 };
