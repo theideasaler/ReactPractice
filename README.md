@@ -3,7 +3,7 @@
 > Author: Neo
 > Date: July 2019
 
-##this is a simple repository for practice purpose
+## this is a simple repository for practice purpose
 
 ### **this project consists of two sections**:
 
