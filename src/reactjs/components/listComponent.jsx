@@ -1,7 +1,24 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-export default function listComp() {
-    return (
-        <h2>List Component Placeholder</h2>
-    );
-}
+const mapStateToProps = state => ({
+    articles: state.articles
+});
+
+const listComp = ({articles}) => (
+    <ul className="list-group list-group-flush">
+        {
+            articles.map(
+                article => (
+                    <li className="list-group-item" key={article.id}>
+                        {article.title}
+                    </li>
+                )   
+            )
+        }
+    </ul>
+);
+
+const List = connect(mapStateToProps)(listComp);
+
+export default List;
