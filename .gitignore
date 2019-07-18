@@ -2,3 +2,7 @@
 /node_modules/
 
 #dist folder
+
+#bootstrap
+
+/src/scss/bootstrap-v4/

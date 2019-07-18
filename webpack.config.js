@@ -21,6 +21,23 @@ module.exports = {
                         ]
                     }
                 }
+            },
+            {
+                test: /\.scss$/,
+                exclude: /(node_modules|bower_components)/,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    {
+                        loader: "postcss-loader",
+                        options:{
+                            plugins: [
+                                require('autoprefixer')
+                            ]
+                        }
+                    },
+                    "sass-loader"
+                ]
             }
         ]
     },
