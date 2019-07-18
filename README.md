@@ -1,11 +1,11 @@
 # ReactPractice
 
-> Author: Neo
+> Author: Neo  
 > Date: July 2019
 
-## this is a simple repository for practice purpose
+## This is a simple repository for practice purpose
 
-### **this project consists of two sections**:
+### **This project consists of two sections**:
 
 **1) Redux Itself**
 
