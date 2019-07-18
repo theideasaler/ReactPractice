@@ -31,24 +31,24 @@ class ConnectedForm extends Component {
         const { title } = this.state;
         return (
             <form onSubmit={this.handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="title">Title</label>
-              <input
-                type="text"
-                className="form-control"
-                id="title"
-                value={title}
-                onChange={this.handleChange}
-              />
-            </div>
-            <button type="submit" className="btn btn-success btn-lg">
-              SAVE
-            </button>
+                <div className="form-group">
+                    <label htmlFor="title">Title</label>
+                    <input 
+                        type="text" 
+                        className="form-control" 
+                        id="title" 
+                        value={ title } 
+                        onChange = { this.handleChange }                                              
+                    />
+                    <button className="btn btn-success btn-lg" type="submit">
+                        SAVE
+                    </button>
+                </div>
             </form>
         );
     }
 }
 
-const Form = connect(null, mapDispatchToProps)(ConnectedForm);
+const Form = connect(null,mapDispatchToProps)(ConnectedForm);
 
 export default Form;
