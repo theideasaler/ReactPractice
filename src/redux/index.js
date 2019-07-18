@@ -18,4 +18,10 @@ store.subscribe(() => {
     console.log("triggering state update functions");
 });
 
+store.dispatch(addArticle({
+    title: "The Matrix",
+    id: 1
+}));
+
+console.log(store.getState());
 console.log("============* end *============");
