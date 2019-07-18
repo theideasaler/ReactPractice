@@ -31,7 +31,6 @@ module.exports = {
         publicPath: '/dist/',
         contentBase: [
             path.join(__dirname, 'views'),
-            
         ],
         watchContentBase: true,
     }
