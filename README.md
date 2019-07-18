@@ -1,5 +1,5 @@
 # ReactPractice
-###### This demo project is powered by React, Redux, and pure Webpack. All JavaScript/JSX code is written in ES6 format.
+###### **This demo project is powered by React, Redux, and pure Webpack. All JavaScript/JSX code is written in ES6 format**.
 > Author: Neo  
 > Date: July 2019
 
