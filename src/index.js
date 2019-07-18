@@ -1,2 +1,4 @@
-import './reactjs/app.jsx';
-import './redux/index';
+import './reactjs/app';
+// import './redux/index';
+
+
