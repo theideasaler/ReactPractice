@@ -40,7 +40,7 @@ class ConnectedForm extends Component {
                         value={ title } 
                         onChange = { this.handleChange }                                              
                     />
-                    <button className="btn btn-success btn-lg" type="submit">
+                    <button className="btn btn-success btn-lg mt-3" type="submit">
                         SAVE
                     </button>
                 </div>

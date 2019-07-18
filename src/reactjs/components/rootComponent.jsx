@@ -10,7 +10,7 @@ export default class App extends React.Component {
         return (
             <div className="row mt-5">
                 <div className="col-md-4 offset-md-1">
-                    <h1>Hello Neo</h1>
+                    <h1>React & Redux</h1>
                     <List />
                 </div>
                 <div className="col-md-4 offset-md-1">
