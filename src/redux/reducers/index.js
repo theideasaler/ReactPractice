@@ -11,6 +11,11 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                 articles: state.articles.concat(action.payload)
             };
+        case ACTIONS.FOUND_BAD_WORD:
+            return{
+                ...state,
+                articles: state.articles.concat({title: "**illeagal words**", id: null})
+            }
         default:
     }
     return state;
