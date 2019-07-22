@@ -1,6 +1,7 @@
 import React from 'react';
 import List from './listComponent.jsx';
 import Form from './formComponent.jsx';
+import Post from './post.jsx';
 
 export default class App extends React.Component {
     constructor() {
@@ -17,6 +18,7 @@ export default class App extends React.Component {
                     <h1>Add New Item</h1>
                     <Form />
                 </div>
+                <Post />
             </div>
         );
     }
