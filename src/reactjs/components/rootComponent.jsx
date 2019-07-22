@@ -18,7 +18,10 @@ export default class App extends React.Component {
                     <h1>Add New Item</h1>
                     <Form />
                 </div>
-                <Post />
+                <div className="col-md-4 offset-md-1">
+                    <h1>Async Posts</h1>
+                    <Post />
+                </div>
             </div>
         );
     }

@@ -1,7 +1,8 @@
 import { ACTIONS } from '../constants/action-types';
 
 const initialState = {
-    articles: [{ title: "The Matrix", id: 0 }]
+    articles: [{ title: "The Matrix", id: 0 }],
+    remoteArticles: []
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -19,7 +20,7 @@ const rootReducer = (state = initialState, action) => {
         case ACTIONS.LOAD_DATA:
             return {
                 ...state,
-                articles: state.articles.concat(action.payload)
+                remoteArticles: state.remoteArticles.concat(action.payload)
             }
         default:
     }
