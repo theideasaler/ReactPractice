@@ -24,9 +24,13 @@ export const getDataAsync = () => (
         respone => respone.json()
     )
     .then(
-        dataInJson => dispatch({ type: ACTIONS.LOAD_DATA, payload: dataInJson })
+        payload => dispatch({ type: ACTIONS.LOAD_DATA, payload })
     )
     .catch(
         err => console.log(err)
     )
 );
+
+export const getDataSaga = () => ({
+    type: ACTIONS.REQUEST_DATA
+});

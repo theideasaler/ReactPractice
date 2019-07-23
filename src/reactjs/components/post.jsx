@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { getData, getDataAsync } from "../../redux/actions/index";
+import { getData, getDataAsync, getDataSaga } from "../../redux/actions/index";
 
 // const mapDispatchToProps = dispatch => ({
 //     getData: () => {
@@ -17,13 +17,17 @@ import { getData, getDataAsync } from "../../redux/actions/index";
 //     }
 // })
 
+const mapDispatchToProps = dispatch => ({
+    getDataSaga: () => dispatch(getDataSaga())
+});
+
 class ConnectedPost extends Component {
     constructor() {
         super();
     }
 
     componentDidMount() {
-        this.props.getDataAsync();
+        this.props.getDataSaga();
     }
 
     render() {
@@ -43,4 +47,4 @@ const mapStateToProps = state => ({
     articles: state.remoteArticles.slice(0, 10)
 });
 
-export default connect(mapStateToProps, { getDataAsync })(ConnectedPost);
+export default connect(mapStateToProps, mapDispatchToProps)(ConnectedPost);

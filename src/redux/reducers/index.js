@@ -22,6 +22,11 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                 remoteArticles: state.remoteArticles.concat(action.payload)
             }
+        case ACTIONS.API_ERROR:
+            return{
+                ...state,
+                remoteArticles: state.remoteArticles.concat({title: "error", id: null})
+            }
         default:
     }
     return state;
